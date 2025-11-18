@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>C/C++ Assignment</title>
+</head>
+<body>
+    <h1>C/C++ Client-Server Execution</h1>
+
+    <label for="input_x">Enter input X (an integer):</label>
+    <input type="number" id="input_x" value="4"> 
+    <button onclick="startExecution()">Run Full Process</button>
+    
+    <hr>
+    
+    <h3>Process Steps:</h3>
+    <p>1. Client Calculation F(x): <span id="client_step">Waiting...</span></p>
+    <p>2. Server Calculation G(y): <span id="server_step">Waiting...</span></p>
+
+    <script src="module.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
