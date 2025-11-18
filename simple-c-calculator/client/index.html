@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C Code Calculator Loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>C Code Calculator Loop</h1>
+
+        <label for="input_x">Enter Number (X):</label>
+        <input type="number" id="input_x" value="10"> 
+        <button onclick="runCalculations()">Compute Full Loop</button>
+        
+        <hr>
+        
+        <div class="results">
+            <h3>Results Breakdown:</h3>
+            <p><strong>Input X:</strong> <span id="val_x">...</span></p>
+            <p>1. Client C Code $F(x) = x + 10$: <span id="result_y" class="client-result">Waiting...</span></p>
+            <p>2. Server C Code $G(y) = y \times 2$: <span id="result_z" class="server-result">Waiting...</span></p>
+            <p class="final-result">Final Value (Z): <span id="final_value">...</span></p>
+        </div>
+    </div>
+
+    <script src="calc_module.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
